@@ -27,7 +27,7 @@ python3 patience.py
 ### Game Instructions
 * Pick one card that exists in a standard deck (e.g. Ace of Spades, 2 of Clubs)
 * Now, just wait! Every second a card will be printed to the screen.
-    * If your card eventually shows up you win!
+    * If your card eventually shows up, you win!
     * Otherwise, you can press 'enter' at any point in the game to stop the
     game. If you stop the game, and your card is not in the deck you win!
 * It's that simple :)
@@ -36,4 +36,4 @@ python3 patience.py
 
 The game is essentially an infinite loop. The game uses two objects: a Card and an Infinite Deck. 
 A Card has two attributes: suit and rank. And the Infinite Deck just has functions to generate the next
-cards. It doesn't store generated cards due to the potential memory overhead for an infinite game.
+cards. It doesn't store generated cards due to the potential memory overhead.
