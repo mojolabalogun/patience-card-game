@@ -6,7 +6,7 @@
 
 ## The Objective
 
-Patience is a single player card game that tests your patience. Players select wait until their card is revealed from the deck
+Patience is a single player card game that tests your patience. Players select a card and wait until it is revealed from an infinite deck
 or end the game if they aren't convinced that their card exists in the deck. The game is a version of the halting problem but instead of asking "Does the program halt?", we ask, "Does your card exist in an infinite deck of cards?"
 
 ## Getting Started
@@ -27,7 +27,13 @@ python3 patience.py
 ### Game Instructions
 * Pick one card that exists in a standard deck (e.g. Ace of Spades, 2 of Clubs)
 * Now, just wait! Every second a card will be printed to the screen.
-    ** If your card eventually shows up you win!
-    ** Otherwise, you can press 'enter' at any point in the game to stop the
+    * If your card eventually shows up you win!
+    * Otherwise, you can press 'enter' at any point in the game to stop the
     game. If you stop the game, and your card is not in the deck you win!
 * It's that simple :)
+
+## Game Design
+
+The game is essentially an infinite loop. The game uses two objects: a Card and an Infinite Deck. 
+A Card has two attributes: suit and rank. And the Infinite Deck just has functions to generate the next
+cards. It doesn't store generated cards due to the potential memory overhead for an infinite game.
