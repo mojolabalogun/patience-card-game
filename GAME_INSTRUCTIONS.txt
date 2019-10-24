@@ -1,0 +1,18 @@
+PATIENCE | A single player game that tests your ability to wait for the right card.
+The game is a version of the halting problem but instead of asking "Does the 
+program terminate?", we ask, "Does your card exist in an infinite deck of 
+cards?"
+
+Game Instructions:
+    - Pick one card that exists in a standard deck (e.g. Ace of Spades, 2 of Clubs)
+    - Now, just wait! Every second a card will be printed to the screen.
+        - If your card eventually shows up you win!
+        - Otherwise, you can press 'enter' at any point in the game to stop the
+        game. If you stop the game, and your card is not in the deck you win!
+    - It's that simple :)
+
+Running the Game:
+    Go to the directory with the shell script (../patience) and run the following:
+        >> ./patience
+    Alternatively, you can run:
+        >> python3 patience.py
