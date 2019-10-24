@@ -39,7 +39,7 @@ def main():
         print()
         while True:
             card = deck.next_card()
-            if deck.in_deck and card == card:
+            if deck.in_deck and card == deck.card:
                 print("You win! The card you selected was in the deck!\n")
                 break
 
